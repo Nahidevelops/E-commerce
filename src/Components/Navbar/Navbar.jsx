@@ -12,6 +12,11 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
+      <input type="checkbox" id="nav-toggle" hidden />
+<label htmlFor="nav-toggle" className="nav-toggle-label">
+  <span></span>
+</label>
+
       <div className="nav-logo">
         <img src={logo} alt="Logo" style={{ width: "40px" }} />
         <p>LUXE NEST</p>
