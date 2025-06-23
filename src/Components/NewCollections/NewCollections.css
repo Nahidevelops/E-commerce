@@ -1,0 +1,45 @@
+.newcollections {
+  width: 100%;
+  padding: 60px 60px 40px; /* Top padding added here */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.newcollections h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 0; /* in case something added above */
+}
+
+.newcollections hr {
+  width: 200px;
+  height: 4px;
+  background: #ff4141;
+  border: none;
+  margin: 20px auto 40px; /* Added more space above */
+  border-radius: 5px;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 60px; /* Equal left-right padding */
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 1024px) {
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px;
+  }
+
+  .newcollections {
+    padding: 40px 30px;
+  }
+}
+

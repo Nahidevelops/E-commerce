@@ -1,0 +1,106 @@
+.relatedproducts {
+  padding: 60px 80px;
+  background-color: #fdfdfd;
+}
+
+.relatedproducts h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.relatedproducts hr {
+  width: 60px;
+  height: 3px;
+  background-color: #555;
+  border: none;
+  margin: 0 auto 30px auto;
+}
+
+.relatedproducts-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* 3D Card Hover */
+.item {
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.item p {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.item-prices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.item-price-new {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.item-price-old {
+  text-decoration: line-through;
+  color: #999;
+}
+/* 📱 Tablet Devices */
+@media screen and (max-width: 1024px) {
+  .relatedproducts {
+    padding: 40px 40px;
+  }
+
+  .relatedproducts h2 {
+    font-size: 24px;
+  }
+}
+
+/* 📱 Mobile Devices */
+@media screen and (max-width: 600px) {
+  .relatedproducts {
+    padding: 30px 16px;
+  }
+
+  .relatedproducts h2 {
+    font-size: 22px;
+  }
+
+  .item {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+
+  .item-prices {
+    font-size: 13px;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
