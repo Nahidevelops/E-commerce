@@ -1,0 +1,102 @@
+.addproduct {
+  margin-left: 220px; /* Sidebar ke liye */
+  padding: 20px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+}
+
+.addproduct-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* ✅ horizontal + vertical gap */
+}
+
+
+.addproduct-itemfield {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px; /* ✅ Add spacing between rows */
+}
+
+
+.addproduct-itemfield p {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.addproduct-itemfield input,
+.addproduct-itemfield textarea,
+.addproduct-itemfield select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.addproduct-upload {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.addproduct-thumbnail-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.addproduct-btn {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.addproduct-btn:hover {
+  background-color: #000;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .addproduct {
+    margin-left: 0;
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .addproduct-form {
+    flex-direction: column;
+  }
+
+  .addproduct-itemfield {
+    flex: 1 1 100%;
+  }
+
+  .addproduct-thumbnail-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .addproduct-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}

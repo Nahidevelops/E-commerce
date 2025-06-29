@@ -1,0 +1,22 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+  margin-top: 60px; /* navbar height */
+  margin-left: 240px; /* sidebar width */
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+  background-color: #fefefe;
+  overflow-x: hidden;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
